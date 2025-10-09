@@ -4,29 +4,35 @@ Credit Card Fraud Dectection Using Machine Learning
 This project focuses on detecting fraudulent credit card transactions using machine learning algorithms. 
 The goal is to classify transactions as **fraudulent** or **legitimate** based on historical transaction data.
 ## Project Workflow
-1.Data Import & Overview
--Load the dataset
-check columns, types
-missing values, and duplicates.
 
-2.Data Cleaning
--Remove irrelevant columns, handle missing values, and address outliers.
+### 1. Data Import & Overview
+- Load the dataset.  
+- Check column names, data types, missing values, and duplicates.  
 
-3.Exploratory Data Analysis (EDA)
--Univariate, bivariate, and multivariate analysis to understand patterns and anomalies.
+### 2. Data Cleaning
+- Remove irrelevant columns.  
+- Handle missing values.  
+- Detect and address outliers.  
 
-4.Data Preprocessing
--Standardize/scaling numerical features.
--Encode categorical variables using one-hot or label encoding.
--Select relevant features for modeling.
+### 3. Exploratory Data Analysis (EDA)
+- Perform univariate analysis to understand individual variables.  
+- Conduct bivariate analysis to explore relationships between two variables.  
+- Perform multivariate analysis to identify patterns and correlations across multiple features.  
 
-5.Model Building & Training
--Split data into training and test sets.
--Train ML models like Logistic Regression, Random Forest, and XGBoost.
+### 4. Data Preprocessing
+- Standardize and scale numerical features.  
+- Encode categorical variables using one-hot or label encoding.  
+- Select relevant features for modeling.
 
-6.Model Evaluation
--Evaluate using Accuracy, Precision, Recall, F1-Score, and ROC-AUC.
--Analyze confusion matrix and predicted vs. actual outcomes.
+### 5. Model Building & Training
+- Split the dataset into training and test sets.  
+- Train machine learning models such as Logistic Regression, Random Forest, and XGBoost.  
 
-7.Visualization & Insights
--Visualize fraud patterns, highlight anomalies, and create dashboards for insights.
+### 6. Model Evaluation
+- Evaluate models using Accuracy, Precision, Recall, F1-Score, and ROC-AUC.  
+- Analyze confusion matrices and compare predicted vs. actual outcomes.  
+
+### 7. Visualization & Insights
+- Visualize fraud patterns and trends.  
+- Highlight anomalies in the data.  
+- Create dashboards to summarize insights and findings.
