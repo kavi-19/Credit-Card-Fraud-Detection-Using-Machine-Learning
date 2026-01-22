@@ -5,34 +5,40 @@ This project focuses on detecting fraudulent credit card transactions using mach
 The goal is to classify transactions as **fraudulent** or **legitimate** based on historical transaction data.
 ## Project Workflow
 
-### 1. Data Import & Overview
-- Load the dataset.  
-- Check column names, data types, missing values, and duplicates.  
+#### a. Data Cleaning & Preprocessing:
 
-### 2. Data Cleaning
-- Remove irrelevant columns.  
-- Handle missing values.  
-- Detect and address outliers.  
+Checked for missing values and handled them (e.g., imputed with mean/median if numeric).
 
-### 3. Exploratory Data Analysis (EDA)
-- Perform univariate analysis to understand individual variables.  
-- Conduct bivariate analysis to explore relationships between two variables.  
-- Perform multivariate analysis to identify patterns and correlations across multiple features.  
+Removed irrelevant columns and addressed outliers to avoid skewing the analysis.
 
-### 4. Data Preprocessing
-- Standardize and scale numerical features.  
-- Encode categorical variables using one-hot or label encoding.  
-- Select relevant features for modeling.
+Converted categorical columns (like payment type, location) to numeric values using encoding (One-hot, Label Encoding).
 
-### 5. Model Building & Training
-- Split the dataset into training and test sets.  
-- Train machine learning models such as Logistic Regression, Random Forest, and XGBoost.  
+#### b. Exploratory Data Analysis (EDA):
 
-### 6. Model Evaluation
-- Evaluate models using Accuracy, Precision, Recall, F1-Score, and ROC-AUC.  
-- Analyze confusion matrices and compare predicted vs. actual outcomes.  
+Univariate analysis → Looked at individual variables (histograms, value counts).
 
-### 7. Visualization & Insights
-- Visualize fraud patterns and trends.  
-- Highlight anomalies in the data.  
-- Create dashboards to summarize insights and findings.
+Bivariate analysis → Checked relationships between two variables (fraud vs amount, fraud vs region).
+
+Multivariate analysis → Identified correlations and patterns across multiple variables.
+
+#### c. Model Building:
+
+Split data into training and testing sets.
+
+Built classification models: Logistic Regression, Random Forest, XGBoost.
+
+Chose these because they are commonly used for binary classification problems.
+
+#### d. Model Evaluation:
+
+Evaluated models using Accuracy, Precision, Recall, F1-score, ROC-AUC to ensure reliability.
+
+Checked confusion matrix to compare predicted vs actual transactions.
+
+e. Visualization & Insights:
+
+Visualized fraud patterns and trends.
+
+Highlighted anomalies and transaction characteristics that indicate fraud.
+
+Created dashboards summarizing key insights.
